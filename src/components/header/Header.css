@@ -1,9 +1,9 @@
-
-.header{
-    margin: 10px;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 2rem;
-    text-align: center;
-    text-shadow: 3px 4px 5px black;
+.headerContainer{
+  
     
+}
+
+.headerContainer img{
+    width: 250px;
+    margin: 30px;
 }

@@ -1,59 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
-
-.cardcontainer{
-    display: flex;
-    flex-flow: row wrap;
+.container{
+    background-color: rgb(247, 236, 215);
+    width: 200px;
+    height: 220px;
+    margin: 10px;
+    border-radius: 8px;
     
 }
-.cardbox{
-    width: 360px;
-    height: 400px;
-    margin: 20px;
-    border-radius: 5px;
-    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
-}
-.cardbox p{
-    color: white;
+
+.description{
+    width: 100%;
+    margin: 2px;
     text-align: center;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 2rem;
-    margin: 0px;
-    text-shadow: 5px 5px 5px black;
+    font-size: 1.3rem;
+    
+    
+    
+    
     
 }
 
 
-.image {
-    width: 85%;
-    height: 300px;
-    margin: 2rem 1rem 1rem 2rem;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    background-position: center;
-    background-size: cover;
-    border-radius: 7px;
-    overflow: hidden;
-    filter: grayscale(0);
-    transition: all 3s;
-    
-      
-   
-}
-.desc{
-    color: white;
+.image{
     position: relative;
-    bottom: -70%;
-    transition: all 1s;
-    font-family: 'Delius Swash Caps', cursive;
-    text-shadow:2px 2px 3px #f8f8f8;
+    left: 40px;
+    width: 120px;
     
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    transform: scale(1);
+    transition: all 1s;
+    
+    
+
 }
 
-.cardbox:hover .desc{
-    bottom: 0;
-    
+.image:hover{
+    transform: scale(1.2)
+
 }
-.cardbox:hover .image{
-    filter: grayscale(100);
+.image p {
+    padding-top: 140px;
+    font-size: 1.5rem;
 }
+

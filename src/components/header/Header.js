@@ -1,14 +1,13 @@
-import React from 'react'
-import "./Header.css"
+import React from "react"
+import "../header/Header.css"
+import reactSvg from "../../assets/react.svg"
 
-function Header () {
-    return (
-        <div>
-            <div className="header">
-                POPULAR TOUR PLACES
-            </div>
+const Header = () => {
+    return(
+        <div className="headerContainer">
+            <img src={reactSvg} alt="reactSvg" />
         </div>
     )
 }
 
-export default Header;
+export default Header

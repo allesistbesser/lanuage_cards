@@ -1,21 +1,26 @@
-import React from "react";
-import "../../helper/data";
-import { data } from "../../helper/data";
+import React, { useState } from "react";
 import "./Card.css";
 
-const Card = () => {
+const Card = ({ item }) => {
+  const [show, setshow] = useState(false);
+
+  const toogle = () => {
+    setshow(!show);
+  };
+
   return (
-    <div class="cardcontainer">
-      {data.map((item, index) => (
-        <div className="cardbox" key={index}>
-            <p>{item.title}</p>
-          <div className="image" style={{backgroundImage: `url(${item.image})`}}>
-             
-           <div className="desc">{item.desc}</div>
-          </div>
-           
-        </div>
-      ))}
+    <div className="container" key={item.name} onClick={toogle}>
+      {show ?  <div className="description" >
+        {item.options.map((opt,index) => (
+         <p key={index}>{opt}</p>
+        ))}
+      </div>  :   <div className="image" style={{ backgroundImage: `url(${item.img})` }}>
+      
+        <p>{item.name}</p>
+      </div>   }
+      
+
+      
     </div>
   );
 };
