@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       
       <div className="appContainer">
-   <p>Mesu<strong>T</strong>epebas</p>
+   <p> <strong>MesuT</strong></p>
       <Header/>
       <Cards/>
       </div>

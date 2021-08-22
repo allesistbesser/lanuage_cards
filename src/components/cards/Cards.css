@@ -13,6 +13,7 @@
     background-color: rgb(248, 159, 43);
     border-radius: 8px;
     margin-bottom: 200px;
+    transition: width 1s;
 }
 .languages{
     width: 400px;
@@ -21,6 +22,8 @@
 @media only screen and (min-width: 1000px) {
     .cardsContainer {
       width: 900px;
+      border-radius: 30px;
+      box-shadow: 6px 7px 7px rgb(243, 207, 207);
       
     }
     .languages{
